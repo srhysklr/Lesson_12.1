@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_Шар_2" data-name="Шар 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82.72 15.22">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #2c262e;
+      }
+
+      .cls-2 {
+        fill: #705f73;
+      }
+    </style>
+  </defs>
+  <g id="Layer_2" data-name="Layer 2">
+    <g>
+      <polygon class="cls-1" points="4.23 0 76.93 0 82.72 15.22 9.04 15.22 4.23 0"/>
+      <polygon points="4.23 0 0 11.7 7.93 11.7 4.23 0"/>
+      <polygon class="cls-2" points="6.78 1.98 10.18 13.04 79.49 13.04 75.66 1.98 6.78 1.98"/>
+    </g>
+  </g>
+</svg>

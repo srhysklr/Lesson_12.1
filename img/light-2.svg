@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 453.49">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ffe3b8;
+      }
+
+      .cls-2 {
+        isolation: isolate;
+      }
+
+      .cls-3 {
+        fill: #fff;
+        mix-blend-mode: overlay;
+        opacity: .55;
+      }
+    </style>
+  </defs>
+  <g class="cls-2">
+    <g id="_Шар_1" data-name="Шар 1">
+      <g>
+        <path d="M268.66,75.24H108.18l2.17-10.04c2.85-13.19,13.46-22.49,25.66-22.49h104.81c12.2,0,22.81,9.3,25.66,22.49l2.17,10.04Z"/>
+        <path class="cls-1" d="M131.92,75.3h112.99l-1.53,3.86c-2.01,5.07-9.48,8.64-18.07,8.64h-73.8c-8.59,0-16.06-3.57-18.07-8.64l-1.53-3.86Z"/>
+        <rect x="149.27" y="24.09" width="78.29" height="18.62"/>
+        <rect x="184.83" width="7.17" height="23.47"/>
+        <polygon class="cls-3" points="268.66 75.24 560 453.49 0 453.49 0 208.13 108.18 75.24 268.66 75.24"/>
+      </g>
+    </g>
+  </g>
+</svg>

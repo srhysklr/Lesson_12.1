@@ -1,0 +1,340 @@
+.wrapper {
+	position: relative;
+	min-height: 100%;
+	overflow: hidden;
+	background: url("../img/bg-2.jpg") 0 0 / cover no-repeat;
+}
+
+.room__body {
+	position: relative;
+	min-height: 100vh;
+}
+
+.room__shelf {
+	position: absolute;
+	background: url("../img/left-bookshelf.svg") 0 0 no-repeat;
+	width: 300px;
+	height: 150px;
+	top:120px;
+}
+
+.room__table{
+	position: absolute;
+	background: url("../img/table.svg") 0 0 no-repeat;
+	width: 800px;
+	height: 400px;
+	left: 100px;
+	bottom: 0px;
+}
+
+.room__table:hover + .room__phone {
+	transform: translateX(400px);
+	visibility: visible;
+	opacity: 1;
+}
+
+.room__table:hover ~ .room__title-board {
+	transform: translateY(690px);
+}
+
+.room__phone {
+	position: absolute;
+	background: url("../img/phone.svg") 0 0 no-repeat;
+	width: 130px;
+	height: 160px;
+	left: -200px;
+	bottom: 180px;
+	transition: all 0.5s ease 0s;
+	visibility: hidden;
+	opacity: 0;
+}
+
+.room__title-board {
+	position: absolute;
+	background: url("../img/title-board.svg") 0 0 no-repeat;
+	width: 200px;
+	height: 52px;
+	left: 580px;
+	top: -50px;
+	transition: all 0.5s ease 0s;
+}
+
+.room__right-shelf {
+	position: absolute;
+	background: url("../img/right-shelf.svg") 0 0 no-repeat;
+	width: 550px;
+	height: 550px;
+	bottom: 0px;
+	right: 0px;
+}
+
+.room__shelf-handle {
+	position: absolute;
+	background: url("../img/shelf-handle.svg") 0 0 no-repeat;
+	width: 150px;
+	height: 30px;
+	bottom: 260px;
+	right: 305px;
+	transition: all 0.6s cubic-bezier(.29, 1.01, 1, -0.68);
+	transform-origin: 0 100%; 
+}
+
+.room__shelf-handle:hover {
+	transform: rotate(90deg);
+}
+
+.room__board {
+	position: absolute;
+	background: url("../img/board.svg") 0 0 no-repeat;
+	width: 580px;
+	height: 420px;
+	top: 50px;
+	right: 350px;
+}
+
+.board__ppl-img1 {
+	position: absolute;
+	background: url("../img/board/ppl-img1.svg") 0 0 no-repeat;
+	width: 80px;
+	height: 100px;
+	top:30px;
+	left:30px;
+	transition: all 0.5s ease 0s;
+}
+
+.board__ppl-img1:hover {
+	transform: translate3d(10px, -10px, 10px);
+}
+.board__ppl-img2 {
+	position: absolute;
+	background: url("../img/board/ppl-img2.svg") 0 0 no-repeat;
+	width: 80px;
+	height: 100px;
+	top:30px;
+	left:130px;
+	transition: all 0.5s ease 0s;
+}
+
+.board__ppl-img2:hover {
+	/* transform: translate3d(10px, -10px, 10px); */
+	transform: translateX(43px) rotate(360deg);
+}
+
+.board {
+	perspective: 500px;
+	
+}
+.board__ppl-img3 {
+	position: absolute;
+	background: url("../img/board/ppl-img3.svg") 0 0 no-repeat;
+	width: 90px;
+	height: 115px;
+	top: 100px;
+	left: 230px;
+	transform: rotate(-11deg);
+	z-index: 5;
+	transition: all 0.5s ease 0s;
+	transform-origin: 50% 30px;
+}
+
+.board__ppl-img3:hover {
+	transform: rotateX(90deg);
+}
+
+.board__ppl-killer {
+	position: absolute;
+	background-color: rgb(255, 255, 255);
+	width: 50px;
+	height: 65px;
+	top: 140px;
+	left: 245px;
+	text-align: center;
+	line-height: 65px;
+	color: red;
+	border-radius: 50%;
+}
+
+.board__missing {
+	position: absolute;
+	background: url("../img/board/missing.svg") 0 0 no-repeat;
+	width: 80px;
+	height: 100px;
+	top:120px;
+	left:70px;
+	transition: all 0.5s ease 0s;
+}
+
+.board__missing:hover {
+	transform: scale(1.5) translateY(10px);
+}
+
+.board__dead {
+	position: absolute;
+	background: url("../img/board/dead-img.svg") 0 0 no-repeat;
+	width: 160px;
+	height: 100px;
+	top: 50px;
+	right:70px;
+	transition: all 0.5s ease 0s;
+}
+
+.board__dead:hover {
+	transform: rotate(-90deg);
+}
+
+.board__dead:hover + .board__dead-txt {
+	transform: translate(70px, 30px);
+}
+
+.board__dead-txt {
+	position: absolute;
+	background: url("../img/board/dead-txt.svg") 0 0 no-repeat;
+	width: 60px;
+	height: 80px;
+	top:130px;
+	right:160px;
+	transition: all 0.5s ease 0s;
+}
+
+.board__evidence-img {
+	position: absolute;
+	background: url("../img/board/evidence.svg") 0 0 no-repeat;
+	width: 120px;
+	height: 130px;
+	top:170px;
+	left:60px;
+
+}
+
+.board__evidence-sign {
+	position: absolute;
+	background: url("../img/board/evidence-sign.svg") 0 0 no-repeat;
+	width: 80px;
+	height: 80px;
+	top: 270px;
+	left:60px;
+	transform-origin: 0 0;
+	transition: all 0.5s ease 0s;
+}
+
+.board__evidence-time {
+	position: absolute;
+	background: url("../img/board/time.svg") 0 0 no-repeat;
+	width: 60px;
+	height: 30px;
+	top: 290px;
+	left:130px;
+	backface-visibility: hidden;
+	transition: all 0.5s ease 0s;
+	transform-origin: top;
+}
+
+.board__evidence-img:hover ~ .board__evidence-time{
+	transform: rotateX(360deg) scale(2);
+}
+
+.board__evidence-img:hover ~ .board__evidence-sign{
+	transform: rotate(30deg);
+}
+
+.board__map {
+	position: absolute;
+	background: url("../img/board/map.svg") 0 0 no-repeat;
+	width: 280px;
+	height: 150px;
+	top: 220px;
+	right:100px;
+}
+
+.map-sign {
+	transition: all 0.5s ease 0s;
+}
+.map-sign:hover {
+	transform: rotate3d(5,2,1, 30deg);
+}
+
+.map-sign__qestion-mark {
+	position: absolute;
+	background: url("../img/board/map-sings/qestion-mark-bottom.svg") 0 0 no-repeat;
+	width: 8px;
+	height: 8px;
+	bottom: 30px;
+	right: 40px;
+	visibility: hidden;
+	opacity: 0;
+	transition: all 1s ease 0s;
+}
+
+.map-sign__qestion-top {
+	position: absolute;
+	background: url("../img/board/map-sings/qestion-mark-top.svg") 0 0 no-repeat;
+	width: 14px;
+	height: 30px;
+	bottom: 35px;
+	right: 34px;
+	visibility: hidden;
+	opacity: 0;
+	transition: all 1s ease 0s;
+}
+
+.map-sign:hover .map-sign__qestion-mark {
+	visibility: visible;
+	opacity:1;
+} 
+
+.map-sign:hover .map-sign__qestion-top  {
+	visibility: visible;
+	opacity: 1;
+} 
+.map-sign__cross {
+	position: absolute;
+	background: url("../img/board/map-sings/cross.svg") 0 0 no-repeat;
+	width: 20px;
+	height: 20px;
+	bottom: 79px;
+	right: 45px;
+	visibility: hidden;
+	opacity: 0;
+	transition: all 4s ease 0s;
+}
+
+.map-sign:hover .map-sign__cross  {
+	visibility: visible;
+	opacity: 1;
+	transform: scale(2) rotate(360deg);
+} 
+
+.map-sign__red-circle1 {
+	position: absolute;
+	background: url("../img/board/map-sings/red-circle1.svg") 0 0 no-repeat;
+	width: 20px;
+	height: 20px;
+	bottom: 73px;
+	right: 126px;
+	visibility: hidden;
+	opacity: 0;
+	transition: all 2s ease 0s;
+}
+
+.map-sign:hover .map-sign__red-circle1  {
+	visibility: visible;
+	opacity: 1;
+} 
+
+.map-sign__red-circle2 {
+	position: absolute;
+	background: url("../img/board/map-sings/red-circle2.svg") 0 0 no-repeat;
+	width: 30px;
+	height: 30px;
+	bottom: 20px;
+	left: 13px;
+	visibility: hidden;
+	opacity: 0;
+	transition: all 3s ease 0s;
+}
+
+.map-sign:hover .map-sign__red-circle2  {
+	visibility: visible;
+	opacity: 1;
+} 
+
